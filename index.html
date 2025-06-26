@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#archive">Archive</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  
+  <section id="home">
+    <br/><br/><br/><br/><br/>
+    <h2>Welcome 👋</h2>
+    <p>
+      안녕하세요. <br/>
+      <strong>풀스택 웹 개발자 김민정</strong>입니다.<br />
+    </p>
+    <img src="images/profile.jpg" alt="Profile" />
+  </section>
+
+  <section id="skills">
+    <h2>🛠 Skills</h2>
+
+    <h3>Frontend</h3>
+    <ul>
+      <li>⚛️ <strong>Next.js (App Router)</strong>: SSR + CSR 기반 라우팅 및 동적 페이지 구성</li>
+      <li>⚛️ <strong>React</strong>: 컴포넌트 기반 UI 개발 및 상태 관리 (useState, useEffect 등)</li>
+      <li>🎨 <strong>Tailwind CSS</strong>: 반응형 UI를 위한 유틸리티 기반 CSS 적용</li>
+      <li>💠 <strong>ShadCN UI</strong>: Card, Button, Modal 등 재사용 가능한 UI 컴포넌트 사용</li>
+      <li>🎞 <strong>Framer Motion</strong>: 애니메이션 효과 및 섹션 전환</li>
+      <li>💳 <strong>Toss Payments SDK</strong>: 결제 연동 및 성공/실패 리디렉션 처리</li>
+      <li>📡 <strong>Fetch / Async Await</strong>: Spring Boot API 연동, JWT 쿠키 포함 요청 처리</li>
+      <li>📦 <strong>LocalStorage</strong>: 장바구니, 주문 정보 등 클라이언트 상태 저장</li>
+      <li>📱 <strong>Responsive Layout</strong>: 미디어 쿼리 기반 모바일 대응</li>
+      <li>🔐 <strong>.env 환경변수 관리</strong>: 민감 정보와 API 주소 분리 관리</li>
+    </ul>
+
+    <h3>Backend</h3>
+    <ul>
+      <li>🌱 <strong>Spring Boot 연동</strong>: JWT 인증 처리 및 사용자 API 연동</li>
+      <li>📝 <strong>회원가입/로그인</strong>: 인증 흐름 및 토큰 저장/유지 구현</li>
+      <li>👤 <strong>마이페이지</strong>: 회원 정보 수정 및 반려동물 이미지 업로드</li>
+      <li>📡 <strong>공공 API 연동</strong>: 구조동물 정보, 24시 동물병원 위치 정보 연동</li>
+      <li>🛍 <strong>스토어/결제/주문</strong>: 상품 상세, 장바구니, Toss 연동 → 주문내역 관리까지 구현</li>
+    </ul>
+
+    <h3>GitHub & 협업</h3>
+    <ul>
+      <li>🧭 <strong>팀장 역할</strong>: 전체 프로젝트 구조 설계 및 기능 분담</li>
+      <li>🐙 <strong>GitHub 기반 협업</strong>: 브랜치 전략, 커밋 관리, GitHub Pages 배포</li>
+      <li>📐 <strong>Figma/Notion 기반 협업</strong>: 디자인 시안 구현 및 일정 공유</li>
+      <li>🗣 <strong>API 설계 커뮤니케이션</strong>: 백엔드와의 스펙 협의 및 테스트 연동</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>📁 Projects</h2>
+
+    <div class="project">
+      <h3>🐾 Pawple - 반려동물 헬스&커뮤니티 플랫폼</h3>
+      <p>
+        반려동물의 건강관리, 커뮤니티, 쇼핑 기능을 통합한 웹 플랫폼입니다.<br />
+        건강 체크, 예방접종 관리(D-DAY 배너), 유기동물 API 연동, 결제 시스템까지 포함된 통합 서비스입니다.
+      </p>
+
+      <ul>
+        <li>✔️ 반려동물 건강 체크 및 접종 히스토리 기능</li>
+        <li>✔️ 커뮤니티 게시판, 댓글, 신고 및 차단 기능</li>
+        <li>✔️ 관리자 페이지를 통한 회원/상품/게시글 관리</li>
+        <li>✔️ TossPayments 결제 연동 및 주문 처리</li>
+        <li>✔️ 구조동물 공공 API 및 24시 동물병원 정보 연동</li>
+      </ul>
+
+      <p><strong>👥 팀 구성:</strong> 총 6명 (프론트 2명, 백엔드 4명) – <strong>팀장</strong>으로 전체 기획 및 구조 설계 주도</p>
+
+      <p><strong>💡 담당 역할:</strong></p>
+      <ul>
+        <li>🔐 로그인 / 소셜로그인 / 회원가입 / JWT 인증 시스템 구현</li>
+        <li>👤 마이페이지: 회원 정보 수정, 반려동물 이미지 등록 기능</li>
+        <li>🛒 스토어 & 결제: 상품 상세 / 장바구니 / Toss 연동 / 주문내역</li>
+        <li>📡 구조 동물 API 연동: 공공 데이터 바탕 자동 노출</li>
+        <li>📍 24시 동물병원 API 및 지도 기반 지역 필터링 기능 구현</li>
+      </ul>
+
+      <p><strong>🔗 GitHub</strong></p>
+        <ul>
+          <li>백엔드: <a href="https://github.com/kmj731/PawPle_back" target="_blank">github.com/kmj731/PawPle_back</a></li>
+          <li>프론트: <a href="https://github.com/kmj731/PawPle_front" target="_blank">github.com/kmj731/PawPle_front</a></li>
+        </ul>
+    </div>
+  </section>
+
+  <section id="archive">
+    <h2>📁 Archive</h2>
+    <ul>
+      <li>
+        <strong>📚 Tistory Blog:</strong>  
+        <a href="https://mdcoding.tistory.com/" target="_blank">mdcoding.tistory.com</a><br />
+        웹 개발 학습 기록 및 기술 블로그 운영 중 (Next.js, Spring Boot, 오류 해결 등)
+      </li>
+      <li>
+        <strong>🔗 GitHub(Pawple Backend):</strong>  
+        <a href="https://github.com/kmj731/PawPle_back" target="_blank">github.com/kmj731/PawPle_back</a><br />
+        Spring Boot 기반 반려동물 커뮤니티 & 건강관리 API 서버
+      </li>
+      <li>
+        <strong>🔗 GitHub(Pawple Frontend):</strong>  
+        <a href="https://github.com/kmj731/PawPle_front" target="_blank">github.com/kmj731/PawPle_front</a><br />
+        Next.js 기반 반려동물 웹 플랫폼 클라이언트 구현
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact</h2>
+    <p>Email: cheongmin0@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/kmj731" target="_blank">github.com/kmj731</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kim Min Jeong. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
